@@ -12,8 +12,8 @@ const data = axios.get('./data/danhSachGhe.json').then((result) => {
 const initialState = {
     userInformation:{
         name:'',
-        quantity: '',
-        seatList:[]
+        seatList:[],
+        priceList:[]
     },
     cinemaDataList:[],
     seatData: data
@@ -24,14 +24,10 @@ const ticketReducer = createSlice({
     initialState,
     reducers:{
         getData: (state,action) =>{
-            console.log(state);
-            console.log(action['payload'])
             state.userInformation = action.payload
         },
 
         setCinemaDataList:(state,action) =>{
-            console.log(state);
-            console.log(action['payload'])
             state.cinemaDataList.push(action.payload)
         }
     }

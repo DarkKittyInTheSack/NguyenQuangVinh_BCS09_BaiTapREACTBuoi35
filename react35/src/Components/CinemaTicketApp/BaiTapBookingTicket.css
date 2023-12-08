@@ -2,6 +2,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+#root{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url('../../images/bgmovie.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bookingMovie{
     font-family: 'Poppins';
 }
